@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "concurrently -n \"client,server\" -c \"bgBlue,bgYellow\" \"npm run dev\" \"npm run server\"",
+    "start": "vite" ,
     "build": "vite build",
     "eject": "vite eject",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
