@@ -84,14 +84,14 @@ Below is a high-level diagram that illustrates the architecture of the StudyNoti
 The StudyNotion platform's API is designed following the REST architectural style. The API is implemented using Node.js and Express.js. It uses JSON for data exchange and follows standard HTTP request methods such as GET, POST, PUT, and DELETE
 
 ## Installation
-1. Clone the repository: <span style="background: #44423F; padding:1px 5px; border-radius:6px; ">npm run test</span>
-2. Navigate to the project directory:   <span style="background: #44423F; padding:1px 5px; border-radius:6px;  ">cd StudyNotion</span>
-3. Install dependencies: <span style="background: #44423F; padding:1px 5px; border-radius:6px ">npm install</span>
+1. Clone the repository: `git clone https://github.com/username/repo.git`
+2. Navigate to the project directory: `cd StudyNotion`
+3. Install dependencies: `npm install`
 
 ## Configuration
 
 1. Set up a MongoDB database and obtain the connection URL.
-2. Create a <span style="background: #363534; padding:2px 5px; border-radius:5px ">.env</span> file in the root directory with the following environment variables
+2. Create a `.env` file in the root directory with the following environment variables
 
 ```bash
   MONGODB_URI=<your-mongodb-connection-url>
@@ -99,8 +99,8 @@ The StudyNotion platform's API is designed following the REST architectural styl
 ```
 
 ## Usage
-1. Start the server: <span style="background: #44423F; padding:2px 5px; border-radius:5px;  ">`npm start`</span>
-2. Open a new terminal and navigate to the <span style="background: #44423F; padding:2px 5px; border-radius:5px;  ">client</span> directory: <span style="background: #44423F; padding:2px 5px; border-radius:5px;  ">cd client</span>
-3. Start the React development server: <span style="background: #44423F; padding:2px 5px; border-radius:5px;  ">npm start</span>
+1. Start the server: `npm start`
+2. Open a new terminal and navigate to the `client` directory: `cd client`
+3. Start the React development server: `npm start`
 
-Access the application in your browser at <span style="background: #44423F; padding:2px 5px; border-radius:5px;  ">`http://localhost:3000`</span>
+Access the application in your browser at `http://localhost:3000`
