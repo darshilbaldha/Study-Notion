@@ -31,7 +31,7 @@ function ReviewSlider() {
 
   return (
     <div className="text-white flex justify-center">
-      <div className="my-[50px] h-[184px] max-w-[300px] sm:max-w-maxContentTab lg:max-w-maxContent">
+      <div className="my-[50px] h-[184px] max-w-[300px] sm:max-w-maxContentTab lg:max-w-maxContent lg:min-w-[1000px]">
         <Swiper
           slidesPerView={1}
           spaceBetween={25}
@@ -50,15 +50,15 @@ function ReviewSlider() {
             disableOnInteraction: false,
           }}
           navigation={true}
-          className="max-h-[30rem]  custom-swiper"
+          className="max-h-[30rem] w-full custom-swiper"
         >
           {reviews.length === 0
             ? (<div className="text-2xl text-center text-richblack-25 font-bold">No Reviews</div>)
             : reviews.map((review, i) => {
                 return (
                   <SwiperSlide key={i}>
-                    <div className="flex flex-col gap-3 bg-richblack-800 p-3 text-[14px] text-richblack-25 mb-10">
-                      <div className="flex items-center gap-4">
+                    <div className="flex flex-col gap-3 bg-richblack-800 p-3 text-[14px] text-richblack-25  mb-10">
+                      <div className="flex items-center gap-4 w-full">
                         <img
                           src={
                             review?.user?.image
