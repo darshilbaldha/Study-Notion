@@ -32,7 +32,7 @@ import UpArrow from "./components/common/UpArrow";
 function App() {
   const { user } = useSelector((state) => state.profile);
   return (
-    <div className="min-h-screen w-screen bg-richblack-900 flex flex-col" id="section">
+    <div className="min-h-screen w-screen bg-richblack-900 flex flex-col scroll-smooth" id="section">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
