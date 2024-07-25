@@ -27,11 +27,12 @@ import CourseDetails from "./pages/CourseDetails";
 import VideoDetails from "./components/core/ViewCourse/VideoDetails";
 import ViewCourse from "./pages/ViewCourse";
 import Instructor from "./components/core/InstructorDashboard/Instructor";
+import UpArrow from "./components/common/UpArrow";
 
 function App() {
   const { user } = useSelector((state) => state.profile);
   return (
-    <div className="min-h-screen w-screen bg-richblack-900 flex flex-col">
+    <div className="min-h-screen w-screen bg-richblack-900 flex flex-col" id="section">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -152,6 +153,7 @@ function App() {
 
         <Route path="*" element={<Error />} />
       </Routes>
+      <UpArrow/>
     </div>
   );
 }

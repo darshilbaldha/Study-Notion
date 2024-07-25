@@ -50,6 +50,10 @@ export default function RequirementsField({
           id={name}
           value={requirement}
           onChange={(e) => setRequirement(e.target.value)}
+          onKeyDown={(e)=>{
+            if(e.key === 'Enter')
+            e.preventDefault();
+          }}
           className="form-style w-full"
         />
         <button

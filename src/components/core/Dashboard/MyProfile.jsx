@@ -41,7 +41,7 @@ const MyProfile = () => {
       </section>
 
       {/* about sections */}
-      <section className="sm:my-10 my-6 flex flex-col gap-y-5 rounded-md border-[1px] border-richblack-700 bg-richblack-800 sm:p-8 p-5 sm:px-12">
+      <section className="sm:my-10 my-6 flex flex-col gap-y-5 rounded-md border-[1px] border-richblack-700 bg-richblack-800 sm:p-8 p-5 pl-0 sm:px-12">
         <div className="flex w-full flex-col sm:flex-row sm:gap-0 sm:items-start gap-4 items-center justify-between">
           <div className="w-[80%] flex flex-col sm:gap-6">
             <p className="text-lg font-semibold text-richblack-5">About</p>

@@ -218,12 +218,13 @@ export const getEnrolledCourses = async (req, res) => {
           (acc, curr) => acc + parseInt(curr.timeDuration),
           0
         );
-        userDetails.courses[i].totalDuration = convertSecondsToDuration(
-          totalDurationInSeconds
-        );
+      
         SubsectionLength +=
           userDetails.courses[i].courseContent[j].subSection.length;
       }
+      userDetails.courses[i].totalDuration = convertSecondsToDuration(
+        totalDurationInSeconds
+      );
       let courseProgressCount = await CourseProgress.findOne({
         courseID: userDetails.courses[i]._id,
         userId: userId,

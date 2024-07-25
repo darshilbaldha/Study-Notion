@@ -58,7 +58,7 @@ export async function buyCourse(
     if (!orderResponse.data.success) {
       throw new Error(orderResponse.data.message);
     }
-    console.log("PRINTING orderResponse", orderResponse);
+    // console.log("PRINTING orderResponse", orderResponse);
     //options
     const options = {
       key: "rzp_test_LrlT8htfWN8Wwg",
