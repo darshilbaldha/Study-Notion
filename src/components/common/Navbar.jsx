@@ -44,6 +44,7 @@ const Navbar = () => {
         className={`${
           location.pathname !== "/" ? "bg-richblack-800" : ""
         } transition-all md:hidden duration-200 w-full flex h-14 items-center justify-center border-b-[1px] border-b-richblack-700`}
+        // name="section"
       >
         <div className="flex  w-11/12 max-w-maxContent justify-between items-center">
           {/* Image */}
