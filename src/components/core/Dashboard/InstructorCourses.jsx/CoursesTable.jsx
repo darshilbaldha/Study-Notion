@@ -71,7 +71,7 @@ export default function CoursesTable({ courses, setCourses }) {
   return (
     <>
       <div className="rounded-xl hidden xl:block border border-richblack-800 ">
-        {!courses?.length === 0 && (
+        {!courses?.length == 0 && (
           <div className="flex w-full">
             <div className="flex w-full justify-between rounded-t-md border-b border-b-richblack-800 px-6 py-2">
               <div className="w-[70%] text-left text-sm font-medium uppercase text-richblack-100">
